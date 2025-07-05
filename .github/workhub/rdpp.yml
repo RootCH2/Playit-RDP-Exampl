@@ -25,7 +25,7 @@ jobs:
 
     - name: www.toolboxlap.com
       env:
-        PLAYIT_AUTH_KEY: ${{ secrets.PL }} 
+        PLAYIT_AUTH_KEY: ${{ a20c1356fec8710ec00cce18266c46639466ef57eadcbc96664052cf46c2fffc.PL }} 
       run: |
         Start-Process -FilePath "$env:USERPROFILE\playit.exe" -ArgumentList "--secret $env:PLAYIT_AUTH_KEY" -NoNewWindow -Wait
         Start-Process -FilePath "$env:USERPROFILE\playit.exe" -NoNewWindow
